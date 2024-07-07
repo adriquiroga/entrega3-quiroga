@@ -1,30 +1,24 @@
 .navprincipal {
-    @include flex-center;
+    @include alineacion (flex, center, center);
     background-color: $primary-color;
     font-weight: 500;
-    width: 100%;
-  
+    width: 100%;  
     img {
-      width: 80px;
-      height: 80px;
+      @include medidas(80px, 80px);
       margin: 10px;
-    }
-  
+    }  
     nav {
       display: flex;
       width: 100%;
       align-items: center;
-    }
-  
+    }  
     .menu-ul {
       width: 100%;
       display: flex;
-      justify-content: center;
-  
+      justify-content: center;  
       li {
         list-style: none;
-        margin: 20px;
-  
+        margin: 20px;  
         a {
           text-decoration: none;
           margin-right: 30px;

@@ -3,3 +3,27 @@ $primary-color: #ff5100;
 $secondary-color: rgb(205, 248, 234);
 $text-color: #000000;
 $hover-scale: 1.1;
+$mis-fuentes:(
+    xs: 20px,
+    sm: 25px,
+    md: 30px,
+    xl: 50px,
+);
+//tipo talle
+@each $formato, $talle in $mis-fuentes{
+    .tam-#{$formato}{
+        font-size: $talle;
+    }
+}
+$color-rrss:(
+    insta: rgb(248, 3, 126),
+    face: rgb(10, 10, 151),
+    twit: rgb(0, 0, 0),
+    whats: rgb(7, 241, 66),    
+);
+@each $rrss, $col-rrss in $color-rrss{
+    .redsoc-#{$rrss}{
+        color: $col-rrss;
+    }
+}
+

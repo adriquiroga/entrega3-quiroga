@@ -1,158 +1,142 @@
 .principal, .principal2, .color-fondo {
-    row-gap: 10px;
-    flex-direction: column;
-    align-items: end;
-    background-color: $secondary-color;
+  row-gap: 10px;
+  flex-direction: column;
+  align-items: end;
+  background-color: $secondary-color;
+}  
+.titulo1, .titulo2 {
+  margin-top: 20px;
+  margin-bottom: 10px;
+  text-align: center;
+  color: $text-color;
+}
+.titulo2 {
+  align-self: baseline;
+  font-size: 30px;
+}
+.color-boton {
+  @include medidas(60%, 50px);
+  @include espacio(10px, 20px);
+  align-items: center;
+  justify-content: center;
+  color: white;
+  background-color: $primary-color;
+  border-color: $primary-color;
+}
+.tama1 {
+  @include medidas(60px, 60px);
+}
+.tama2 {
+  @include medidas(250px, 300px);
+  align-items: center;  
+  &:hover {
+    transform: scale($hover-scale);
   }
-  
-  .titulo1, .titulo2 {
-    margin-top: 20px;
-    margin-bottom: 10px;
-    text-align: center;
-    color: $text-color;
-  }
-  
-  .titulo2 {
-    align-self: baseline;
-    font-size: 30px;
-  }
-  
-  .color-boton {
-    width: 60%;
-    height: 50px;
-    margin: 20px;
-    padding: 20px;
-    align-items: center;
-    justify-content: center;
-    color: white;
-    background-color: $primary-color;
-    border-color: $primary-color;
-    padding: 10px;
-  }
-  
-  .tama1 {
-    width: 60px;
-    height: 60px;
-  }
-  
-  .tama2 {
-    width: 250px;
-    height: 300px;
-    align-items: center;
-  
-    &:hover {
-      transform: scale($hover-scale);
-    }
-  }
-  
-  .tama3 {
-    width: 650px;
-    height: 350px;
-    align-items: center;
-    margin: 20px;
-  }
-  
-  .tama4 {
-    font-size: 15px;
-  }
-  
-  .descri1 {
-    color: #330470;
-  }
-  
-  .parrafo1 {
-    font-size: 40px;
-    text-align: center;
-  }
-  
-  .parrafo2 {
-    font-size: 25px;
-    text-align: center;
-  }
-  
-  .descri2 {
-    color: #1172f0;
-  }
-  
-  .descri3 {
-    color: darkgreen;
-  }
-  
-  .descri4 {
-    color: chocolate;
-  }
-  
-  .frase, .lema {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-  }
-  
-  .frase {
-    color: #330470;
-    background-color: aquamarine;
-    border: 3px solid aquamarine;
-  }
-  
-  .lema {
-    font-size: 30px;
-    font-style: italic;
-    color: $primary-color;
-    background-color: #edeec9;
-  }
-  
-  .video {
-    @include flex-center;
-    width: 600px;
-    height: 250px;
-  }
-  
-  h2 {
-    align-items: center;
-  }
-  
-  .fundacion, .innovacion, .informe {
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    margin: 20px;
-    border-color: $text-color;
-    border-style: solid;
-  }
-  
-  .contacto {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    height: auto;
-    text-align: center;
-    background-color: $secondary-color;
-  
-    h1 {
-      margin-bottom: 40px;
-      text-decoration: underline;
-    }
-  
-    .form-container {
-      width: 100%;
-      max-width: 600px;
-  
-      .form-group {
-        margin: 20px;
-  
-        label {
-          text-align: left;
-          display: block;
-        }
+}
+.tama3 {
+  @include medidas(650px, 350px);
+  align-items: center;
+  margin: 20px;
+}
+.tama4 {
+  font-size: 15px;
+}
+.descri1 {
+  color: #330470;
+}
+.parrafo1 {
+  font-size: 40px;
+  text-align: center;
+}
+.parrafo2 {
+  font-size: 25px;
+  text-align: center;
+}
+.descri2 {
+  color: #1172f0;
+}
+.descri3 {
+  color: darkgreen;
+}
+.descri4 {
+  color: chocolate;
+}
+.frase, .lema {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+.frase {
+  color: #330470;
+  background-color: aquamarine;
+  border: 3px solid aquamarine;
+}
+.lema {
+  font-size: 30px;
+  font-style: italic;
+  color: $primary-color;
+  background-color: #edeec9;
+}  
+.video {
+  @include alineacion (flex, center, center);
+  width: 600px;
+  height: 250px;
+}  
+h2 {
+  align-items: center;
+}  
+.fundacion, .innovacion, .informe {
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin: 20px;
+  border-color: $text-color;
+  border-style: solid;
+}  
+.contacto {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: auto;
+  text-align: center;
+  background-color: $secondary-color;  
+  h1 {
+    margin-bottom: 40px;
+    text-decoration: underline;
+  }  
+  .form-container {
+    width: 100%;
+    max-width: 600px;  
+    .form-group {
+      margin: 20px;  
+      label {
+        text-align: left;
+        display: block;
       }
     }
   }
-  
-  .lema2 {
-    font-size: 30px;
-    font-style: italic;
-    color: $primary-color;
-    margin-top: 50px;
-  }
+}  
+.lema2 {
+  font-size: 30px;
+  font-style: italic;
+  color: $primary-color;
+  margin-top: 50px;
+}
+.btn-link {
+  text-decoration: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #000000;
+}
+.btn-link:after {
+  content: '\25BC';
+  font-size: 1rem;
+  margin-left: 10px;
+  color: #000000;
+}
+.collapsed.btn-link:after {
+  content: '\25B6';
+}
