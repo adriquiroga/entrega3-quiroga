@@ -1,0 +1,249 @@
+* {
+  font-family: "Montserrat", sans-serif;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.navprincipal {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #ff5100;
+  font-weight: 500;
+  width: 100%;
+}
+.navprincipal img {
+  width: 80px;
+  height: 80px;
+  margin: 10px;
+}
+.navprincipal nav {
+  display: flex;
+  width: 100%;
+  align-items: center;
+}
+.navprincipal .menu-ul {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.navprincipal .menu-ul li {
+  list-style: none;
+  margin: 20px;
+}
+.navprincipal .menu-ul li a {
+  text-decoration: none;
+  margin-right: 30px;
+}
+
+.principal, .principal2, .color-fondo {
+  row-gap: 10px;
+  flex-direction: column;
+  align-items: end;
+  background-color: rgb(205, 248, 234);
+}
+
+.titulo1, .titulo2 {
+  margin-top: 20px;
+  margin-bottom: 10px;
+  text-align: center;
+  color: #000000;
+}
+
+.titulo2 {
+  align-self: baseline;
+  font-size: 30px;
+}
+
+.color-boton {
+  width: 60%;
+  height: 50px;
+  margin: 20px;
+  padding: 20px;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  background-color: #ff5100;
+  border-color: #ff5100;
+  padding: 10px;
+}
+
+.tama1 {
+  width: 60px;
+  height: 60px;
+}
+
+.tama2 {
+  width: 250px;
+  height: 300px;
+  align-items: center;
+}
+.tama2:hover {
+  transform: scale(1.1);
+}
+
+.tama3 {
+  width: 650px;
+  height: 350px;
+  align-items: center;
+  margin: 20px;
+}
+
+.tama4 {
+  font-size: 15px;
+}
+
+.descri1 {
+  color: #330470;
+}
+
+.parrafo1 {
+  font-size: 40px;
+  text-align: center;
+}
+
+.parrafo2 {
+  font-size: 25px;
+  text-align: center;
+}
+
+.descri2 {
+  color: #1172f0;
+}
+
+.descri3 {
+  color: darkgreen;
+}
+
+.descri4 {
+  color: chocolate;
+}
+
+.frase, .lema {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.frase {
+  color: #330470;
+  background-color: aquamarine;
+  border: 3px solid aquamarine;
+}
+
+.lema {
+  font-size: 30px;
+  font-style: italic;
+  color: #ff5100;
+  background-color: #edeec9;
+}
+
+.video {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 600px;
+  height: 250px;
+}
+
+h2 {
+  align-items: center;
+}
+
+.fundacion, .innovacion, .informe {
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin: 20px;
+  border-color: #000000;
+  border-style: solid;
+}
+
+.contacto {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: auto;
+  text-align: center;
+  background-color: rgb(205, 248, 234);
+}
+.contacto h1 {
+  margin-bottom: 40px;
+  text-decoration: underline;
+}
+.contacto .form-container {
+  width: 100%;
+  max-width: 600px;
+}
+.contacto .form-container .form-group {
+  margin: 20px;
+}
+.contacto .form-container .form-group label {
+  text-align: left;
+  display: block;
+}
+
+.lema2 {
+  font-size: 30px;
+  font-style: italic;
+  color: #ff5100;
+  margin-top: 50px;
+}
+
+.footerbar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #ff5100;
+  font-weight: 500;
+  width: 100%;
+  justify-content: space-between;
+}
+.footerbar-img {
+  width: 80px;
+  height: 80px;
+  margin: 10px;
+  justify-content: start;
+  align-items: center;
+}
+.footerbar .footer-1 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  justify-content: center;
+}
+.footerbar .footer-1 p, .footerbar .footer-1 a {
+  margin: 10px;
+}
+.footerbar .footer-2 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  justify-content: flex-end;
+}
+.footerbar .footer-2 p {
+  margin: 10px;
+}
+.footerbar .footer-2 a {
+  margin: 20px;
+}
+
+@media (max-width: 768px) {
+  .video {
+    width: 100%;
+    height: auto;
+  }
+}
+@media (max-width: 480px) {
+  .video {
+    width: 100%;
+    height: auto;
+  }
+}
+
+/*# sourceMappingURL=main.css.map */

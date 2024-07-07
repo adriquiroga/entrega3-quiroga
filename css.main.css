@@ -1,0 +1,44 @@
+* {
+  font-family: "Montserrat", sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.navprincipal {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #ff5100;
+  font-weight: 500;
+  width: 100%;
+}
+
+.navprincipal img {
+  width: 80px;
+  height: 80px;
+  margin: 10px;
+}
+
+.navprincipal nav {
+  display: flex;
+  width: 100%;
+  align-items: center;
+}
+
+.menu-ul {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.menu-ul li {
+  list-style: none;
+  margin: 20px;
+}
+
+.menu-ul li a {
+  text-decoration: none;
+  margin-right: 30px;
+}
+
+/*# sourceMappingURL=css.main.css.map */

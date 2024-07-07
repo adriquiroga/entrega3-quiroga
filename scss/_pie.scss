@@ -1,0 +1,32 @@
+
+.footerbar {
+    @include flex-center;
+    background-color: $primary-color;
+    font-weight: 500;
+    width: 100%;  
+    justify-content: space-between;
+    &-img {
+      width: 80px;
+      height: 80px;
+      margin: 10px;
+      justify-content: start;
+      align-items: center;
+    }  
+    .footer-1 {
+      @include flex-center;
+      justify-content: center;  
+      p, a {
+        margin: 10px;
+      }
+    }
+    .footer-2 {
+      @include flex-center;
+      justify-content: flex-end;  
+      p{
+        margin: 10px;
+      }  
+      a {
+        margin: 20px;
+      }
+    }
+  }
