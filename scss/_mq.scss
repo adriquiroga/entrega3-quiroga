@@ -10,3 +10,34 @@
       height: auto;
     }
   }
+  @media (max-width: 768px) {
+    .grid-container {
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas:
+            "primero segundo"
+            "tercero cuarto"
+            "quinto quinto"
+            "sexto septimo";
+    }
+    .video {
+        width: 100%;
+        height: auto;
+    }
+}
+@media (max-width: 480px) {
+    .grid-container {
+        grid-template-columns: 1fr;
+        grid-template-areas:
+            "primero"
+            "segundo"
+            "tercero"
+            "cuarto"
+            "quinto"
+            "sexto"
+            "septimo";
+    }
+    .video {
+        width: 100%;
+        height: auto;
+    }
+}

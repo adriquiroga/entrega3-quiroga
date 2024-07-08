@@ -140,3 +140,7 @@ h2 {
 .collapsed.btn-link:after {
   content: '\25B6';
 }
+.rotate-scale-up-hor {
+	-webkit-animation: rotate-scale-up-hor 0.65s linear both;
+	        animation: rotate-scale-up-hor 0.65s linear both;
+}
