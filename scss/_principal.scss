@@ -144,3 +144,40 @@ h2 {
 	-webkit-animation: rotate-scale-up-hor 0.65s linear both;
 	        animation: rotate-scale-up-hor 0.65s linear both;
 }
+
+.carousel-indicators {
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  justify-content: center;
+  padding-left: 0;
+  margin-right: 15%;
+  margin-bottom: 0;
+  list-style: none;
+}
+
+.carousel-indicators button {
+  position: relative;
+  display: block;
+  width: 10px;
+  height: 10px;
+  margin: 1px;
+  cursor: pointer;
+  border-radius: 50%;
+  border: none;
+  background-color: #fff;
+  opacity: 0.5;
+}
+
+.carousel-indicators .active {
+  opacity: 1;
+  background-color: #007bff;
+}
+.custom-img {
+  width: 400px;
+  height: 600px;
+  padding-bottom: 10%;
+}
+
